@@ -1,0 +1,49 @@
+@import './config';
+
+header{
+    display: flex;
+    align-items: center;
+
+    .logo{
+        width: 50px;
+        padding: 10px 30px;
+    }
+    h1{
+        font-size: 1.5rem;
+        background: linear-gradient(
+            to right,
+            hsl(37, 97%, 70%),
+         hsl(329, 70%, 58%)
+         );
+        -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+    }
+}
+.block {
+  width: 400px;
+  height: 200px;
+  margin: 50px;
+}   
+
+.container {
+  margin-top: 150px;
+}
+
+h2 {
+  font-size: 80px;
+  font-family: Helvetica;
+}
+
+footer{
+    // display: flex;
+    // align-items: flex-end;
+    // flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    // width: 100vw;
+
+    img{
+        width: 100vw;
+        height: 30px;
+    }
+}

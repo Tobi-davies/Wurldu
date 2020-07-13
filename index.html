@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <title>FlashSnap</title>
+  
+</head>
+      <body>
+          <header>
+              <img class="logo" src="/assets/images/logo.jpg" alt="logo">
+              <h1>FlashSnap</h1>
+        </header>
+        <div class="container">
+          <div class="block">
+            <h2>Item 1</h2>
+          </div>
+    
+          <div class="block">
+            <h2>Item 2</h2>
+          </div>
+    
+          <div class="block">
+            <h2>Item 3</h2>
+          </div>
+    
+          <div class="block">
+            <h2>Item 4</h2>
+          </div>
+    
+          <div class="block">
+            <h2>Item 5</h2>
+          </div>
+    
+          <div class="block">
+            <h2>Item 6</h2>
+          </div>
+    
+          <div class="block">
+            <h2>Item 7</h2>
+          </div>
+    
+          <div class="block">
+            <h2>Item 8</h2>
+          </div>
+        </div>
+    
+        <footer>
+            <img src="/assets/images/corrugated-sheets.jpg" alt="sheets">
+        </footer>
+        <!-- <script
+          src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        ></script> -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/horizontal-scroll@1.1.0/dist/index.min.js"></script> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script> -->
+        <script src="/assets/js/index.js"></script>
+        <script src="/assets/js/main.js"></script>
+        <script>
+          var blocks = document.getElementsByClassName("block");
+          var container = document.getElementsByClassName("container");
+          var hs = new HorizontalScroll.default({
+            blocks: blocks,
+            container: container,
+            isAnimated: true,
+            springEffect: 0.8,
+          });
+        </script>
+      </body>
+</html>
