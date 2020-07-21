@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
 *,
 *::before,
 *::after {
@@ -70,6 +72,7 @@ body {
   text-transform: uppercase;
   font-size: 1.5rem;
   margin: 5px;
+  font-family: 'Do Hyeon', sans-serif;
 }
 
 .home {
@@ -102,6 +105,7 @@ body {
 .home_text .home_heading {
   font-size: 5rem;
   margin-bottom: 2rem;
+  font-family: 'Vollkorn', serif;
 }
 
 .home_text .paragraph {
@@ -163,12 +167,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.categories_text {
+.categories .cat_text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,15 +188,70 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 20px;
 }
 
-.categories_text .paragraph {
-  font-size: 1.5rem;
+.categories .cat_text .heading1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
 }
 
-.categories_text .paragraph span {
+.categories .cat_text .heading2 {
   font-size: 5rem;
-  margin-top: 20rem;
+  font-family: 'Vollkorn', serif;
+}
+
+.categories .cat_text .paragraph {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.categories .categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 10rem;
+}
+
+.categories .categories .category {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  margin-right: 4rem;
+  place-items: center;
+  padding: 20px;
+}
+
+.categories .categories .category img {
+  border-radius: 2rem;
+  margin: 10px;
+}
+
+.categories .categories .category h1 {
+  font-size: 3.5rem;
+  position: relative;
+  top: 7rem;
+}
+
+.categories .categories .category .img_1 {
+  position: relative;
+  top: 12rem;
+}
+
+.categories .categories .category .img_2 {
+  position: relative;
+  top: -8rem;
+}
+
+.categories .categories .category p {
+  font-size: 1.5rem;
+  position: relative;
+  top: -1rem;
+  line-height: 2rem;
 }
 
 .footer {
@@ -197,7 +261,7 @@ body {
   width: 100vw;
 }
 
-.footer_pattern {
+.footer .footerImg {
   width: 100vw;
   height: 30px;
 }
