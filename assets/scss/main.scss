@@ -35,6 +35,7 @@
   grid-template-columns: repeat(2, 1fr);
   justify-content: right;
   align-items: center;
+  margin-left: -12rem;
 
   &_text {
     grid-column: 1/2;
@@ -68,8 +69,10 @@
   }
 
   &_img {
-    display: flex;
-    flex-direction: row;
+    grid-column: 2/3;
+        position: relative;
+        align-self: center;
+        margin-top: -45rem;
 
     img {
       position: absolute;
@@ -77,14 +80,21 @@
     }
 
     .home_img_1 {
-      top: 20rem;
-      z-index: 2;
-      width: 350px;
-      margin-left: 5rem;
+      left: 0;
+      top: 0;
     }
     .home_img_2 {
-      top: 10rem;
-      margin-left: 10rem;
+      left: 33rem;
+      top: 4rem;
+    }
+    .home_img_3 {
+      left: 33rem;
+      top: 20rem;
+    }
+    .home_img_4 {
+      left: 45rem;
+      top: 0rem;
+     
     }
   }
 }
@@ -252,19 +262,13 @@
 
   .footerImg {
     width: 100vw;
-    height: 25px;
+    height: 40px;
+    max-width: 100%;
   }
-}
 
-
-@mixin media-sm {
   @media screen and (max-width: 768px) {
-    @content;
+    .footerImg{
+      height: 25px;
+    }
   }
-}
-
-@include media-sm() {
-.home{
-  margin-left: -9rem;
-}
 }
