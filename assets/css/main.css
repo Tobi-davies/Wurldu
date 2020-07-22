@@ -106,7 +106,7 @@ body {
 }
 
 .home_text .home_heading {
-  font-size: 5rem;
+  font-size: 7rem;
   font-family: "Grenze Gotisch", cursive;
   font-weight: 500;
 }
@@ -131,10 +131,31 @@ body {
   border: 1px solid #fff;
 }
 
+.home_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .home_img img {
-  position: relative;
-  top: -3rem;
+  position: absolute;
   border-radius: 2rem;
+}
+
+.home_img .home_img_1 {
+  top: 20rem;
+  z-index: 2;
+  width: 350px;
+  margin-left: 5rem;
+}
+
+.home_img .home_img_2 {
+  top: 10rem;
+  margin-left: 10rem;
 }
 
 .categories {
@@ -331,5 +352,11 @@ body {
 
 .footer .footerImg {
   width: 100vw;
-  height: 20px;
+  height: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    margin-left: -9rem;
+  }
 }

@@ -44,7 +44,7 @@
     top: -3rem;
 
     .home_heading {
-      font-size: 5rem;
+      font-size: 7rem;
       font-family: "Grenze Gotisch", cursive;
       font-weight: 500;
     }
@@ -68,10 +68,23 @@
   }
 
   &_img {
+    display: flex;
+    flex-direction: row;
+
     img {
-      position: relative;
-      top: -3rem;
+      position: absolute;
       border-radius: 2rem;
+    }
+
+    .home_img_1 {
+      top: 20rem;
+      z-index: 2;
+      width: 350px;
+      margin-left: 5rem;
+    }
+    .home_img_2 {
+      top: 10rem;
+      margin-left: 10rem;
     }
   }
 }
@@ -190,7 +203,7 @@
   flex-direction: row;
   align-items: center;
   position: relative;
-    top: -3rem;
+  top: -3rem;
 
   .bio {
     .heading {
@@ -239,6 +252,19 @@
 
   .footerImg {
     width: 100vw;
-    height: 20px;
+    height: 25px;
   }
+}
+
+
+@mixin media-sm {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@include media-sm() {
+.home{
+  margin-left: -9rem;
+}
 }

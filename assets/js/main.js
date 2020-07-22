@@ -28,7 +28,7 @@ tl
         stagger: 0.2,
 
     })
-    .from('.home img', {
+    .from('.home_img .home_img_1, .home_img_2', {
         opacity: 0,
         stagger: 0.2,
         duration: 1
