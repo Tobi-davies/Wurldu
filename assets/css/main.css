@@ -7,6 +7,7 @@
   padding: 0;
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -100,7 +101,8 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin-top: 15rem;
+  position: relative;
+  top: -3rem;
 }
 
 .home_text .home_heading {
@@ -109,7 +111,7 @@ body {
   font-weight: 500;
 }
 
-.home_text .paragraph, .home_text .end .bio h4, .end .bio .home_text h4 {
+.home_text .home_paragraph {
   font-size: 1.3rem;
 }
 
@@ -122,8 +124,8 @@ body {
 }
 
 .home_text .btn:hover {
-  -webkit-transition: .8s ease-in-out;
-  transition: .8s ease-in-out;
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
   background: none;
   color: #fff;
   border: 1px solid #fff;
@@ -131,7 +133,7 @@ body {
 
 .home_img img {
   position: relative;
-  top: 4rem;
+  top: -3rem;
   border-radius: 2rem;
 }
 
@@ -150,7 +152,8 @@ body {
 }
 
 .categories .cat_text {
-  margin: 20px;
+  position: relative;
+  top: -3rem;
 }
 
 .categories .cat_text .heading1 {
@@ -166,7 +169,7 @@ body {
 
 .categories .cat_text .paragraph, .categories .cat_text .end .bio h4, .end .bio .categories .cat_text h4 {
   font-size: 1.3rem;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .categories .categories {
@@ -199,24 +202,24 @@ body {
 .categories .categories .category h1 {
   font-size: 3.5rem;
   position: relative;
-  top: 2rem;
+  top: 0rem;
   font-family: "Grenze Gotisch", cursive;
 }
 
 .categories .categories .category .img_1 {
   position: relative;
-  top: 8rem;
+  top: 5rem;
 }
 
 .categories .categories .category .img_2 {
   position: relative;
-  top: -12rem;
+  top: -15rem;
 }
 
 .categories .categories .category p {
   font-size: 1.3rem;
   position: relative;
-  bottom: 4rem;
+  bottom: 8.5rem;
 }
 
 .facts {
@@ -229,6 +232,11 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+.facts_text {
+  position: relative;
+  top: -3rem;
 }
 
 .facts_text .heading1 {
@@ -246,9 +254,9 @@ body {
   margin: 10rem;
   font-size: 1.3rem;
   position: relative;
-  padding: 6rem;
+  padding: 10rem;
   position: relative;
-  top: 5rem;
+  top: 1.5rem;
   min-height: 40rem;
   min-width: 120rem;
   display: -ms-grid;
@@ -268,6 +276,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  top: -3rem;
 }
 
 .end .bio .heading {
@@ -282,7 +292,6 @@ body {
 }
 
 .end .bio h4 {
-  color: #d9083c;
   text-transform: uppercase;
 }
 
@@ -322,5 +331,5 @@ body {
 
 .footer .footerImg {
   width: 100vw;
-  height: 30px;
+  height: 20px;
 }

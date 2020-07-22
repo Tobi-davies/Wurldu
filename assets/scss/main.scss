@@ -40,14 +40,15 @@
     grid-column: 1/2;
     justify-self: center;
     align-self: center;
-    margin-top: 15rem;
+    position: relative;
+    top: -3rem;
 
     .home_heading {
       font-size: 5rem;
       font-family: "Grenze Gotisch", cursive;
       font-weight: 500;
     }
-    .paragraph {
+    .home_paragraph {
       font-size: 1.3rem;
     }
     .btn {
@@ -57,8 +58,8 @@
       cursor: pointer;
       border: 1px solid #fff;
 
-      &:hover{
-        transition: .8s ease-in-out;
+      &:hover {
+        transition: 0.8s ease-in-out;
         background: none;
         color: #fff;
         border: 1px solid #fff;
@@ -69,7 +70,7 @@
   &_img {
     img {
       position: relative;
-      top: 4rem;
+      top: -3rem;
       border-radius: 2rem;
     }
   }
@@ -85,7 +86,8 @@
   justify-content: space-between;
 
   .cat_text {
-    margin: 20px;
+    position: relative;
+    top: -3rem;
 
     .heading1 {
       margin-bottom: 10px;
@@ -100,7 +102,7 @@
 
     .paragraph {
       font-size: 1.3rem;
-      margin-top: 10px;
+      margin-top: 5px;
     }
   }
 
@@ -125,23 +127,23 @@
       h1 {
         font-size: 3.5rem;
         position: relative;
-        top: 2rem;
+        top: 0rem;
         font-family: "Grenze Gotisch", cursive;
       }
       .img_1 {
         position: relative;
-        top: 8rem;
+        top: 5rem;
       }
 
       .img_2 {
         position: relative;
-        top: -12rem;
+        top: -15rem;
       }
 
       p {
         font-size: 1.3rem;
         position: relative;
-        bottom: 4rem;
+        bottom: 8.5rem;
       }
     }
   }
@@ -155,7 +157,8 @@
   justify-content: flex-start;
 
   &_text {
-
+    position: relative;
+    top: -3rem;
     .heading1 {
       margin-bottom: 10px;
       font-size: 2rem;
@@ -172,9 +175,9 @@
     margin: 10rem;
     font-size: 1.3rem;
     position: relative;
-    padding: 6rem;
+    padding: 10rem;
     position: relative;
-    top: 5rem;
+    top: 1.5rem;
     min-height: 40rem;
     min-width: 120rem;
     display: grid;
@@ -186,48 +189,46 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  position: relative;
+    top: -3rem;
 
-  .bio{
+  .bio {
+    .heading {
+      margin-bottom: 10px;
+      font-size: 5rem;
+      font-family: "Grenze Gotisch", cursive;
+    }
+    .paragraph {
+      font-size: 1.3rem;
+      color: darken($color: #7e7e7e, $amount: 5%);
+    }
 
-  .heading {
-    margin-bottom: 10px;
-    font-size: 5rem;
-    font-family: "Grenze Gotisch", cursive;
-    
-  }
-  .paragraph {
-    font-size: 1.3rem;
-    color: darken($color: #7e7e7e, $amount: 5%);
-  }
-
-  h4 {
-    @extend .paragraph;
-    color: #d9083c;
-    text-transform: uppercase;
-  }
-}
-.socials{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 80px;
-  margin-top: 10rem;
-
-  h4 {
-    font-size: 1.5rem;
-    color: darken($color: #7e7e7e, $amount: 5%);
-    text-transform: uppercase;
-  }
-
-  .icons{
-    i{
-      font-size: 30px;
-      margin: 10px;
-      cursor: pointer;
+    h4 {
+      @extend .paragraph;
+      text-transform: uppercase;
     }
   }
+  .socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 80px;
+    margin-top: 10rem;
 
-}
+    h4 {
+      font-size: 1.5rem;
+      color: darken($color: #7e7e7e, $amount: 5%);
+      text-transform: uppercase;
+    }
+
+    .icons {
+      i {
+        font-size: 30px;
+        margin: 10px;
+        cursor: pointer;
+      }
+    }
+  }
 }
 
 .footer {
@@ -238,6 +239,6 @@
 
   .footerImg {
     width: 100vw;
-    height: 30px;
+    height: 20px;
   }
 }
